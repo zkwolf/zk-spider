@@ -24,6 +24,10 @@ Some Note
 
 根据前几天看Fluent Python的经验，获取文件名可以这样
 
-
     import os  
     _, name = os.path.split(file)
+
+在进行第一次测试的时候发现，不加User-Agent访问的是彩版网站，遂添加了chrome的UA
+
+然后爬取下来发现是一个跳转代码，在chrome的开发者工具查看网络发现发生了302跳转，于是抓取分为两次，第一次获得跳转的地址，第二次获得网页
+
