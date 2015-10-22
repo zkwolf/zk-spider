@@ -17,3 +17,13 @@
 以前没做过命令行加参数的东西，遂百度get argparse一枚，去官方文档看了下例子，决定直接用argparse了
 
 爬虫一类还是用最常用的requests+beautifulsoup4了（requests记得关闭keep-alive）
+
+
+-----
+Some Note
+
+根据前几天看Fluent Python的经验，获取文件名可以这样
+
+
+    import os  
+    _, name = os.path.split(file)
